@@ -1,0 +1,22 @@
+{
+	"name": "DS_ADLS_TGT_EMP",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_SOURCE_MANAGED_IDENTITY",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureDataLakeStoreLocation",
+				"folderPath": "Target"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
