@@ -1,0 +1,13 @@
+{
+	"name": "LS_ADLS_SOURCE_MANAGED_IDENTITY",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDataLakeStore",
+		"typeProperties": {
+			"dataLakeStoreUri": "https://sampysparkadls.azuredatalakestore.net/webhdfs/v1",
+			"tenant": "d79e8a65-cdaf-463b-bd04-58740f5cad7c",
+			"subscriptionId": "477ff2b5-e627-491d-beab-e7cd08c720bd",
+			"resourceGroupName": "rg_dev"
+		}
+	}
+}
