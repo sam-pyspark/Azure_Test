@@ -1,0 +1,25 @@
+{
+	"name": "PL_ADLS_SRC_EMP_KEY_VAULT",
+	"properties": {
+		"description": "pipeline to copy data from ADLS source emp to target emp using authentication type service principal and azure key vault",
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"enableStaging": false
+				}
+			}
+		],
+		"annotations": []
+	}
+}
